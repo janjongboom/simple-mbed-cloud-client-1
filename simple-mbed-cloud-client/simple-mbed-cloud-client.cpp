@@ -88,10 +88,10 @@ int SimpleMbedCloudClient::init(bool format) {
     }
 
     // Initialize mbed trace
-    mbed_trace_init();
-    mbed_trace_helper_create_mutex();
-    mbed_trace_mutex_wait_function_set(mbed_trace_helper_mutex_wait);
-    mbed_trace_mutex_release_function_set(mbed_trace_helper_mutex_release);
+    // mbed_trace_init();
+    // mbed_trace_helper_create_mutex();
+    // mbed_trace_mutex_wait_function_set(mbed_trace_helper_mutex_wait);
+    // mbed_trace_mutex_release_function_set(mbed_trace_helper_mutex_release);
 
     // Initialize the FCC
     int status = fcc_init();
